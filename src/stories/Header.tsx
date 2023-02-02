@@ -1,10 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-import { Button } from "./Button";
+import { Button } from "../components/Button/Button";
+import { type IUser } from "../types";
 import "./header.css";
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+interface HeaderProps {
+  user: IUser;
+  onLogin: () => void;
+  onLogout: () => void;
+  onCreateAccount: () => void;
+}
+export const Header = ({
+  user,
+  onLogin,
+  onLogout,
+  onCreateAccount,
+}: HeaderProps) => (
   <header>
     <div className="wrapper">
       <div>
@@ -35,7 +46,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
         {user ? (
           <>
             <span className="welcome">
-              Welcome, <b>{user.name}</b>!
+              Welcome, <b>{user?.name}</b>!
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />
           </>
@@ -56,7 +67,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
 );
 
 Header.propTypes = {
-  user: PropTypes.shape({}),
+  user: PropTypes.object,
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
   onCreateAccount: PropTypes.func.isRequired,
