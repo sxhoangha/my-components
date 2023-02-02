@@ -10,6 +10,9 @@
 .storybook-button--primary {
   color: white;
   background-color: #1ea7fd;
+  &:hover {
+    background-color: aquamarine;
+  }
 }
 .storybook-button--secondary {
   color: #333;
