@@ -24,7 +24,15 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "lint:scss-fix": "stylelint \"src/**/*.scss\" --fix",
+    "lint:es": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --max-warnings 0",
+    "lint:es-fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:prettier": "prettier src/**/*.{js,jsx,ts,tsx,scss,mdx} --list-different",
+    "lint:prettier-fix": "prettier src/**/*.{js,jsx,ts,tsx,scss,md,mdx} --write ",
+    "lint:test": "jest -u",
+    "chromatic": "npx chromatic"
   },
   "eslintConfig": {
     "extends": [
@@ -67,6 +75,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "chromatic": "^6.15.0",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-react-app": "^7.0.1",
@@ -81,10 +90,20 @@
     "lint-staged": "^13.1.0",
     "prettier": "2.8.3",
     "prop-types": "^15.8.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  }
+    "**/*": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "my-components@0.1.0"
 }
