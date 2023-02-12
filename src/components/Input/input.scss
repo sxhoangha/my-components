@@ -1,5 +1,14 @@
+@import "../../styles/utilities/all.scss";
+$shadow-radius: 0.3rem;
+
 .hh-input {
   &-main {
+    border: border(base) solid color(grey-dark-light);
     border-radius: 0.2rem;
+    padding: padding(tiny) padding(smaller);
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 $shadow-radius color(grey-medium);
+    }
   }
 }

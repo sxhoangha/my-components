@@ -2,4 +2,10 @@ interface IUser {
   name: string;
 }
 
-export type { IUser };
+enum InputType {
+  TEXT = "text",
+  PASSWORD = "password",
+  NUMBER = "number",
+}
+
+export { type IUser, InputType };

@@ -1,0 +1,92 @@
+$font-sizes: (
+  base: 1rem,
+  // 16px
+  small: 0.875rem,
+  // 14px
+  smaller: 0.8125rem,
+  // 13px
+  x-small: 0.75rem,
+  // 12px
+  tiny: 0.625rem,
+  // 10px
+  tiniest: 0.5rem,
+  // 8px
+  medium: 1.125rem,
+  // 18px
+  large: 1.25rem // 20px,,
+);
+
+$padding-sizes: (
+  none: 0,
+  base: 1rem,
+  // 16px
+  small: 0.75rem,
+  // 12px
+  smaller: 0.5rem,
+  // 8px
+  tiny: 0.25rem,
+  // 4px
+  medium: 1.125rem,
+  // 18px
+  large: 1.25rem,
+  // 20px
+  larger: 1.5rem,
+  // 24px
+  larger-plus: 1.75rem,
+  // 28px
+  extra-large: 2rem,
+  // 32px
+  extra-large-plus: 2.5rem // 40px,,
+);
+
+$margin-sizes: (
+  base: 1rem,
+  // 16px
+  small: 0.75rem,
+  // 12px
+  smaller: 0.5rem,
+  // 8px
+  tiny: 0.25rem,
+  // 4px
+  medium: 1.125rem,
+  // 18px
+  large: 1.25rem,
+  // 20px
+  large-plus: 1.5rem,
+  // 24px
+  extra-large: 2rem // 32px,,
+);
+
+$border-sizes: (
+  base: 1px,
+  base-plus-one: 2px,
+  base-plus-two: 3px,
+  base-plus-three: 4px,
+  base-plus-four: 5px,
+);
+
+$line-height-sizes: (
+  base: 1.5rem,
+  // 24px
+  small: 1.375rem,
+  // 22px
+  smaller: 1.25rem,
+  // 20px
+  x-small: 1.125rem,
+  // 18px
+  tiny: 0.875rem,
+  // 14px
+  large: 1.75rem,
+  // 28px
+  larger: 2rem // 32px,,
+);
+
+$img-sizes: (
+  base: 1rem,
+  // 16px
+  small: 1.125rem,
+  // 18px
+  large: 1.5rem,
+  // 24px
+  larger: 3rem // 48px,,
+);

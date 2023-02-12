@@ -1,0 +1,153 @@
+$standard-colors: (
+  // Primary colors - Set 1
+  navy: rgb(17, 27, 88),
+  // #111b58
+  indigo: rgb(46, 61, 152),
+  // #2e3d98
+  // Primary colors - Set 2
+  plum: rgb(79, 54, 144),
+  // #4f3690
+  lt-blue: rgb(9, 188, 239),
+  // #09bcef
+  steel: rgb(126, 146, 159),
+  // #7e929f
+  teal: rgb(0, 184, 186),
+  // #00b8ba
+  cloud: rgb(225, 232, 246),
+  // #e1e8f6
+  // Secondary colors - Set 1
+  navy-plus-two: rgb(9, 14, 44),
+  // #090e2c
+  navy-plus-one: rgb(13, 20, 66),
+  // #0d1442
+  navy-minus-one: rgb(65, 73, 121),
+  // #414979
+  navy-minus-two: rgb(112, 118, 155),
+  // #70769b
+  navy-minus-three: rgb(160, 164, 188),
+  // #a0a4bc
+  indigo-plus-two: rgb(23, 31, 76),
+  // #171f4c
+  indigo-plus-one: rgb(35, 46, 114),
+  // #232e72
+  indigo-minus-one: rgb(88, 100, 173),
+  // #5864ad
+  indigo-minus-two: rgb(130, 139, 193),
+  // #828bc1
+  indigo-minus-three: rgb(171, 177, 214),
+  // #abb1d6
+  // Secondary colors - Set 2
+  plum-plus-two: rgb(40, 27, 72),
+  // #281b48
+  plum-plus-one: rgb(59, 41, 108),
+  // #3b296c
+  plum-minus-one: rgb(114, 94, 166),
+  // #725ea6
+  plum-minus-two: rgb(149, 134, 188),
+  // #9586bc
+  plum-minus-three: rgb(185, 175, 211),
+  // #b9afd3
+  lt-blue-plus-two: rgb(5, 94, 120),
+  // #055e78
+  lt-blue-plus-one: rgb(7, 141, 179),
+  // #078db3
+  lt-blue-minus-one: rgb(58, 201, 242),
+  // #3ac9f2
+  lt-blue-minus-two: rgb(107, 215, 245),
+  // #6bd7f5
+  lt-blue-minus-three: rgb(157, 228, 249),
+  // #9de4f9
+  steel-plus-two: rgb(63, 73, 80),
+  // #3f4950
+  steel-plus-one: rgb(95, 110, 119),
+  // #5f6e77
+  steel-minus-one: rgb(152, 168, 178),
+  // #98a8b2
+  steel-minus-two: rgb(178, 190, 197),
+  // #b2bec5
+  steel-minus-three: rgb(203, 211, 217),
+  // #cbd3d9
+  teal-plus-two: rgb(0, 92, 93),
+  // #005c5d
+  teal-plus-one: rgb(0, 138, 139),
+  // #008383
+  teal-minus-one: rgb(51, 198, 200),
+  // #33c6c8
+  teal-minus-two: rgb(102, 212, 214),
+  // #66d4d6
+  teal-minus-three: rgb(153, 227, 227),
+  // #99e3e3
+  cloud-plus-two: rgb(113, 116, 123),
+  // #71747b
+  cloud-plus-one: rgb(169, 174, 185),
+  // #a9aeb9
+  cloud-minus-one: rgb(231, 237, 248),
+  // #e7edf8
+  cloud-minus-two: rgb(237, 241, 250),
+  // #edf1fa
+  cloud-minus-three: rgb(243, 246, 251),
+  // #f3f6fb
+  burnt-plus-one: rgb(180, 66, 26),
+  // #b4421a
+  // Supplemental colors
+  firebrick: rgb(223, 51, 36),
+  // #df3324
+  burnt: rgb(240, 88, 34),
+  // #f05822
+  discovery: rgb(238, 177, 17),
+  // #eeb111
+  green: rgb(140, 197, 62),
+  // #8cc53e
+  emerald: rgb(8, 166, 26),
+  // #08a61a
+  pine: rgb(0, 99, 83),
+  // #006353
+  cerulean: rgb(0, 117, 153),
+  // #007599
+  lake: rgb(0, 132, 206),
+  // #0084ce
+  magenta: rgb(160, 0, 107),
+  // #a0006b
+  madder-red: rgb(186, 0, 76),
+  // #ba004C
+  raspberry: rgb(224, 0, 81),
+  // #e00051
+  // Grey scale colors
+  grey-darkest: rgb(51, 51, 51),
+  // #333333
+  grey-dark-one: rgb(102, 102, 102),
+  // #666666
+  grey-dark-two: rgb(117, 117, 117),
+  // #757575
+  grey-medium: rgb(153, 153, 153),
+  // #999999
+  grey-light: rgb(204, 204, 204),
+  // #cccccc
+  grey-lightest: rgb(249, 249, 249),
+  // #f9f9f9
+  grey-dark-light: rgb(213, 213, 213),
+  // #d5d5d5
+  grey-white-lite: rgb(232, 232, 232),
+  // #e8e8e8
+  grey-white-medium: rgb(244, 244, 244),
+  // #f4f4f4
+  grey-white-dark: rgb(161, 170, 176),
+  // #a1aab0
+  // Blue grey colors
+  blue-grey: rgb(123, 154, 175),
+  // #7b9aaf
+  blue-grey-dark: rgb(152, 168, 178),
+  // #98a8b2
+  blue-grey-medium: rgb(178, 190, 197),
+  // #b9c4cb
+  blue-grey-light: rgb(203, 211, 217),
+  // #cbd3d9
+  hover-grey: rgb(98, 119, 131),
+  // #627783
+  // User defined colors
+  white: rgb(255, 255, 255),
+  // #ffffff
+  black: rgb(0, 0, 0),
+  // #000000
+  blue-light: rgb(195, 229, 246) // #c3e5f6
+);

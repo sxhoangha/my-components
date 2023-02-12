@@ -28,7 +28,8 @@
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/restrict-template-expressions": "error",
     "@typescript-eslint/no-confusing-void-expression": "warn",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off"
   },
   "settings": {
     "react": {

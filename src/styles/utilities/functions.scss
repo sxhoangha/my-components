@@ -1,0 +1,38 @@
+// Generic function to extract value from map of items
+@function extract-from-map($key, $map-items) {
+  @if map-has-key($map-items, $key) {
+    @return map-get($map-items, $key);
+  }
+
+  @warn "Unknown `#{$key}`";
+  @return null;
+}
+
+// When color string is passed, the corresponding rgb value is returned
+@function color($key) {
+  @return extract-from-map($key, $standard-colors);
+}
+
+@function font($key) {
+  @return extract-from-map($key, $font-sizes);
+}
+
+@function line-height($key) {
+  @return extract-from-map($key, $line-height-sizes);
+}
+
+@function padding($key) {
+  @return extract-from-map($key, $padding-sizes);
+}
+
+@function margin($key) {
+  @return extract-from-map($key, $margin-sizes);
+}
+
+@function border($key) {
+  @return extract-from-map($key, $border-sizes);
+}
+
+@function img-size($key) {
+  @return extract-from-map($key, $img-sizes);
+}
