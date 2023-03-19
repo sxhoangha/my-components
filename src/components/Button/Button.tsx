@@ -1,59 +1,66 @@
-import React from "react";
 import PropTypes from "prop-types";
+import { type ReactNode, type FC } from "react";
+import { classNames } from "../../shared/utils";
 import "./button.scss";
 
-/**
- * Primary UI component for user interaction
- */
+export enum Variants {
+  BASIC = "basic",
+  ICON = "icon",
+  PRIMARY = "primary",
+  SECONDARY = "secondary",
+}
+
+export enum ButtonSize {
+  MICRO = "micro",
+  SMALL = "small",
+  MEDIUM = "medium",
+  LARGE = "large",
+}
 interface ButtonProps {
-  primary?: boolean;
+  /**
+   * The children node could be label or icon..
+   */
+  children: ReactNode;
   backgroundColor?: string;
-  size: string;
-  label: string;
+  variant?: Variants;
+  size?: ButtonSize;
   onClick?: () => void;
 }
 
-export const Button = ({
-  primary,
+const Button: FC<ButtonProps> = ({
   backgroundColor,
   size,
-  label,
+  children,
+  variant,
   ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+  const className = classNames("hh-button", {
+    "hh-button--primary": variant === Variants.PRIMARY,
+    "hh-button--secondary": variant === Variants.SECONDARY,
+    "hh-btn--is-icon-btn": variant === Variants.ICON,
+    "hh-button--micro": size === ButtonSize.MICRO,
+    "hh-button--small": size === ButtonSize.SMALL,
+    "hh-button--medium": size === ButtonSize.MEDIUM,
+    "hh-button--large": size === ButtonSize.LARGE,
+  });
+
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " ",
-      )}
+      className={className}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };
 
 Button.propTypes = {
   /**
-   * Is this the principal call to action on the page?
-   */
-  primary: PropTypes.bool,
-  /**
    * What background color to use
    */
   backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(["small", "medium", "large"]),
-  /**
-   * Button contents
-   */
-  label: PropTypes.string.isRequired,
   /**
    * Optional click handler
    */
@@ -62,7 +69,9 @@ Button.propTypes = {
 
 Button.defaultProps = {
   backgroundColor: null,
-  primary: false,
-  size: "medium",
+  variant: Variants.BASIC,
+  size: ButtonSize.MEDIUM,
   onClick: undefined,
 };
+
+export default Button;

@@ -1,33 +1,55 @@
-.storybook-button {
+.hh-button {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
-  border-radius: 3em;
+  border-radius: 0.5rem;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
 }
-.storybook-button--primary {
+.hh-button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: #1976d2;
   &:hover {
-    background-color: aquamarine;
+    background-color: #1565c0;
   }
 }
-.storybook-button--secondary {
-  color: #333;
+.hh-button--secondary {
+  color: #323131;
   background-color: transparent;
+  &:hover {
+    background-color: #f4f4f4;
+  }
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-.storybook-button--small {
+
+.hh-btn--is-icon-btn {
+  min-width: unset;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hh-button--micro {
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  height: 20px;
+  min-width: 52px;
+}
+
+.hh-button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
-.storybook-button--medium {
+.hh-button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
-.storybook-button--large {
+.hh-button--large {
   font-size: 16px;
   padding: 12px 24px;
 }
